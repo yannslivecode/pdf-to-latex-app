@@ -1,0 +1,42 @@
+% Custom LaTeX package: cours_FARNIER
+% This file contains the custom commands and packages used in the user's template
+
+% Core packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+
+% Layout
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+% Math
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fouridx}
+
+% Chemistry
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
+% Physics
+\usepackage{circuitikz}
+
+% Graphics
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,calc,patterns,angles,quotes}
+
+% Custom commands
+\newcommand{\derd}[2]{\dfrac{\textrm{d} #1}{\textrm{d} #2}}
+\newcommand{\derdd}[2]{\dfrac{\textrm{d}^2 #1}{\textrm{d} #2 ^2}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\V}[1]{\overrightarrow{\mathstrut #1}}
+\newcommand*\norme[1]{\left\lVert #1\right\rVert}
+\newcommand{\exo}[1]{{\bfseries Exercice #1 \\ \hline}}
+
+% SI Unit settings
+\sisetup{output-decimal-marker={,}}
